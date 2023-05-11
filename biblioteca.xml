@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!-- Tres tipos de documentos: libros, revistas y periódicos. Todos los documentos tienen como 
+     identificador un atributo id. Para los libros, el id empieza por L seguido de cuatro dígitos.
+     Para los periódicos, el id empieza por P seguido de cuatro dígitos. Las revistas igual con R. -->
+
+<!--  Libros: L1234. clasificado como novela, infantil o didáctico.
+      Cada libro tiene un atributo que identifica su clase llamado tipo_clase    -->
+
+
+<libros>
+
+    <libro> <!-- novela -->
+    </libro>
+
+    <libro> <!-- infantil -->
+    </libro>
+
+    <libro> <!-- didáctico -->
+    </libro>
+
+</libros>
+
+<revistas>
+
+    <revista> <!-- informática -->
+    </revista>
+
+    <revista> <!-- corazón -->
+    </revista>
+
+    <revista> <!-- coches -->
+    </revista>
+
+    <revista> <!-- investigación -->
+    </revista>
+    <revista> <!-- otros -->
+    </revista>
+
+</revistas>
+
+<periodicos>
+
+<periodicoNacional>
+</periodicoNacional>
+
+<periodicoInternacional>
+</periodicoInternacional>
+
+
+</periodicos>
