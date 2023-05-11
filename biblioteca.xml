@@ -12,30 +12,58 @@
     <libros>
 
         <libro> <!-- novela -->
+            <id>L1000</id>
+            <tipo_clase> novela </tipo_clase>
+            <título></título>
+            <indice></indice>
+            <sinopsis></sinopsis>
         </libro>
+
 
         <libro> <!-- infantil -->
+            <id>L2000</id>
+            <tipo_clase> infantil </tipo_clase>
+            <título></título>
         </libro>
+
 
         <libro> <!-- didáctico -->
+            <id>L3000</id>
+            <tipo_clase> didáctico </tipo_clase>
+            <título></título>
         </libro>
-
     </libros>
 
     <revistas>
 
         <revista> <!-- informática -->
+            <id>R4000</id>
+            <tipo_clase> informática </tipo_clase>
+            <título></título>
+
         </revista>
 
         <revista> <!-- corazón -->
+            <id>R5000</id>
+            <tipo_clase></tipo_clase>
+            <título></título>
         </revista>
 
         <revista> <!-- coches -->
+            <id>R6000</id>
+            <tipo_clase></tipo_clase>
+            <título></título>
         </revista>
 
         <revista> <!-- investigación -->
+            <id>R7000</id>
+            <tipo_clase></tipo_clase>
+            <título></título>
         </revista>
         <revista> <!-- otros -->
+            <id></id>
+            <tipo_clase></tipo_clase>
+            <título></título>
         </revista>
 
     </revistas>
@@ -44,9 +72,18 @@
     <periodicos>
 
         <periodicoNacional>
+            <id>P8000</id>
+            <tipo_clase> </tipo_clase>
+            <indice></indice>
+            <seccion></seccion>
         </periodicoNacional>
 
         <periodicoInternacional>
+            <id>P9000</id>
+            <tipo_clase></tipo_clase>
+            <indice></indice>
+            <seccion></seccion>
+
         </periodicoInternacional>
 
 
