@@ -7,45 +7,49 @@
 <!--  Libros: L1234. clasificado como novela, infantil o didáctico.
       Cada libro tiene un atributo que identifica su clase llamado tipo_clase    -->
 
+<biblioteca>
 
-<libros>
+    <libros>
 
-    <libro> <!-- novela -->
-    </libro>
+        <libro> <!-- novela -->
+        </libro>
 
-    <libro> <!-- infantil -->
-    </libro>
+        <libro> <!-- infantil -->
+        </libro>
 
-    <libro> <!-- didáctico -->
-    </libro>
+        <libro> <!-- didáctico -->
+        </libro>
 
-</libros>
+    </libros>
 
-<revistas>
+    <revistas>
 
-    <revista> <!-- informática -->
-    </revista>
+        <revista> <!-- informática -->
+        </revista>
 
-    <revista> <!-- corazón -->
-    </revista>
+        <revista> <!-- corazón -->
+        </revista>
 
-    <revista> <!-- coches -->
-    </revista>
+        <revista> <!-- coches -->
+        </revista>
 
-    <revista> <!-- investigación -->
-    </revista>
-    <revista> <!-- otros -->
-    </revista>
+        <revista> <!-- investigación -->
+        </revista>
+        <revista> <!-- otros -->
+        </revista>
 
-</revistas>
-
-<periodicos>
-
-<periodicoNacional>
-</periodicoNacional>
-
-<periodicoInternacional>
-</periodicoInternacional>
+    </revistas>
 
 
-</periodicos>
+    <periodicos>
+
+        <periodicoNacional>
+        </periodicoNacional>
+
+        <periodicoInternacional>
+        </periodicoInternacional>
+
+
+    </periodicos>
+
+</biblioteca>  
