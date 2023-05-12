@@ -58,8 +58,8 @@
             <título>Computer Hoy</título>
                 <revista_num>
                     <indice_rev>
-                        <seccion numPaginas="">
-                            <contenido href=""/>
+                        <seccion numPaginas="75">
+                            <contenido href="https://www.probytes.net/wp-content/uploads/2018/01/4-1.png"/>
                         </seccion>
 
                     </indice_rev>
@@ -70,8 +70,8 @@
             <título>Pronto</título>
                 <revista_num>
                     <indice_rev>
-                        <seccion numPaginas="">
-                            <contenido href=""/>
+                        <seccion numPaginas="80">
+                            <contenido href="https://i.pinimg.com/originals/9c/7f/7e/9c7f7ed00657ee75a0f5297ddb116d63.jpg"/>
                         </seccion>
                     </indice_rev>
                 </revista_num>
@@ -81,8 +81,8 @@
             <título>Mundo Motor</título>
                 <revista_num>
                     <indice_rev>
-                        <seccion numPaginas="">
-                            <contenido href=""/>
+                        <seccion numPaginas="70">
+                            <contenido href="https://i.imgflip.com/122crn.jpg"/>
                         </seccion>
                     </indice_rev>
                 </revista_num>
@@ -90,22 +90,35 @@
 
         <revista id="R7000" tipo_clase="Investigación"> <!-- investigación -->
             <título>Magister News</título>
+                <revista_num>
+                    <indice_rev>
+                        <seccion numPaginas="60">
+                            <contenido href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"/>
+                        </seccion>
+                    </indice_rev>
+                </revista_num>
         </revista>
 
         <revista id="R8000" tipo_clase="Otros"> <!-- otros -->   
             <título>El Mundo Today</título>
+                    <revista_num>
+                    <indice_rev>
+                        <seccion numPaginas="40">
+                            <contenido href="https://www.elmundotoday.com/"/>
+                        </seccion>
+                    </indice_rev>
+                </revista_num>
         </revista>
 
     </revistas>
-
 
     <periodicos>
         <periodicoNacional id="P9000" tipo_clase="Prensa Nacional" fechaPub="">     
             <indice></indice>
             <secciones>
-                <seccion id="Eco122" tipo_seccion="Economía"></seccion>
-                <seccion id="Opi243" tipo_seccion="Opinión"></seccion>
-                <seccion id="Depi693" tipo_seccion="Deportes"></seccion>
+                <seccion id="Eco122" tipo_seccion="Economía" autor="Pedro"></seccion>
+                <seccion id="Opi243" tipo_seccion="Opinión" autor="Pablo"></seccion>
+                <seccion id="Depi693" tipo_seccion="Deportes" autor="Mateo"></seccion>
             </secciones>      
             <contenido href=""/>
         </periodicoNacional>
@@ -113,9 +126,9 @@
         <periodicoInternacional id="P1100" tipo_clase="Prensa Internacional" fechaPub="">
             <indice></indice>
             <secciones>
-                <seccion id="E12" tipo_seccion="Economy"></seccion>
-                <seccion id="O24" tipo_seccion="Opinion"></seccion>
-                <seccion id="S60" tipo_seccion="Sports"></seccion>
+                <seccion id="E12" tipo_seccion="Economics" autor="Peter"></seccion>
+                <seccion id="O24" tipo_seccion="Opinion" autor="Paul"></seccion>
+                <seccion id="S60" tipo_seccion="Sports" autor="Matthew"></seccion>
             </secciones> 
             <contenido href=""/>
         </periodicoInternacional>
