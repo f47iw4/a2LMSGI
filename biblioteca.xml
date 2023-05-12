@@ -100,20 +100,25 @@
 
 
     <periodicos>
-
-        <periodicoNacional id="P9000">
-            <tipo_clase> </tipo_clase>
+        <periodicoNacional id="P9000" tipo_clase="Prensa Nacional" fechaPub="">     
             <indice></indice>
-            <seccion></seccion>
+            <secciones>
+                <seccion id="Eco122" tipo_seccion="Economía"></seccion>
+                <seccion id="Opi243" tipo_seccion="Opinión"></seccion>
+                <seccion id="Depi693" tipo_seccion="Deportes"></seccion>
+            </secciones>      
+            <contenido href=""/>
         </periodicoNacional>
 
-        <periodicoInternacional id="P1100">
-            <tipo_clase></tipo_clase>
+        <periodicoInternacional id="P1100" tipo_clase="Prensa Internacional" fechaPub="">
             <indice></indice>
-            <seccion></seccion>
-
+            <secciones>
+                <seccion id="E12" tipo_seccion="Economy"></seccion>
+                <seccion id="O24" tipo_seccion="Opinion"></seccion>
+                <seccion id="S60" tipo_seccion="Sports"></seccion>
+            </secciones> 
+            <contenido href=""/>
         </periodicoInternacional>
-
 
     </periodicos>
 
