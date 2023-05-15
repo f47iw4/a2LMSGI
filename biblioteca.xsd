@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- declaracion del namespace-->
 <schema xmlns="http://www.w3.org/2001/XMLSchema">
-
         <!-- biblioteca -->
     <element name="biblioteca">
         <complexType>
@@ -58,7 +57,45 @@
                     
                     </element>
 
-                    <element name ="periodicos">
+
+                    <element name ="revistas">
+                            <complexType>
+                                <sequence>
+                                    <element name="revista" maxOccurs="unbounded" >
+                                        <complexType>
+                                            <sequence>
+                                                    <element name="tituloRev" type="string"></element>
+                                                    <element name="numRev" type="integer"></element>
+                                                    <element name="indiceRev" type="string"></element>
+                                                        <element name="seccionesRev">
+                                                            <complexType>
+                                                                <sequence>
+                                                                    <element name="seccion" maxOccurs="unbounded">
+                                                                        <complexType>
+                                                                                <sequence>
+                                                                                    <element name="contenido">
+                                                                                        <complexType>
+                                                                                            <attribute name="href" type="string" ></attribute>
+                                                                                        </complexType>
+                                                                                    </element>
+                                                                                </sequence>
+                                                                            <attribute name="numPag" type="integer"></attribute>
+                                                                        </complexType>
+                                                                    </element>
+                                                                </sequence>
+                                                            </complexType>
+                                                        </element>
+                                            </sequence>
+                                                <attribute name="idRev" type="ID"></attribute>
+                                                <attribute name="tipo_clase" type="string"></attribute>
+                                                <attribute name="numPag" type="integer"></attribute>
+                                        </complexType>
+                                    </element>
+                                </sequence>
+                            </complexType>
+                       </element>
+
+                       <element name ="periodicos">
                     <complexType>
                             <sequence>
                                 <!-- periodicos-->
@@ -101,52 +138,12 @@
                                         <attribute name="tipo_clase" type="string"></attribute>
                                         <attribute name="fechaP" type="date"></attribute>
 
-                                    </complexType>  
-                                
-                                 </element>
-                            
+                                    </complexType> 
+                                 </element>     
                             </sequence>
-                    </complexType>
-                    
+                        </complexType>
+
                     </element>
-
-
-                        <element name ="revistas">
-                            <complexType>
-                                <sequence>
-                                    <element name="revista" maxOccurs="unbounded" >
-                                        <complexType>
-                                            <sequence>
-                                                    <element name="tituloRev" type="string"></element>
-                                                    <element name="numRev" type="integer"></element>
-                                                    <element name="indiceRev" type="string"></element>
-                                                        <element name="seccionesRev">
-                                                            <complexType>
-                                                                <sequence>
-                                                                    <element name="seccion" maxOccurs="unbounded">
-                                                                        <complexType>
-                                                                                <sequence>
-                                                                                    <element name="contenido">
-                                                                                        <complexType>
-                                                                                            <attribute name="href" type="string" ></attribute>
-                                                                                        </complexType>
-                                                                                    </element>
-                                                                                </sequence>
-                                                                            <attribute name="numPag" type="integer"></attribute>
-                                                                        </complexType>
-                                                                    </element>
-                                                                </sequence>
-                                                            </complexType>
-                                                        </element>
-                                            </sequence>
-                                                <attribute name="idRev" type="ID"></attribute>
-                                                <attribute name="tipo_clase" type="string"></attribute>
-                                                <attribute name="numPag" type="integer"></attribute>
-                                        </complexType>
-                                    </element>
-                                </sequence>
-                            </complexType>
-                       </element>
             </sequence>
         </complexType>
     </element>
