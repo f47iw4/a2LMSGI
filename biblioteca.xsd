@@ -72,7 +72,6 @@
                                                     <sequence>
                                                         <element name="articulo" maxOccurs="unbounded">
                                                             <complexType>
-                                                                <!-- Elemento dentro de articulo-->
                                                                 <sequence> 
                                                                     <element name="contenido">
                                                                         <complexType>
@@ -118,15 +117,12 @@
                                     <element name="revista" maxOccurs="unbounded" >
                                         <complexType>
                                             <sequence>
-                                                <!-- Elementos de revistas-->
                                                     <element name="tituloRev" type="string"></element>
                                                     <element name="numRev" type="integer"></element>
                                                     <element name="indiceRev" type="string"></element>
-                                                        <!-- Elemento seccion con subelementos-->
                                                         <element name="seccionesRev">
                                                             <complexType>
                                                                 <sequence>
-                                                                    <!-- definicion dentro de elemento seccion-->
                                                                     <element name="seccion" maxOccurs="unbounded">
                                                                         <complexType>
                                                                                 <sequence>
@@ -136,8 +132,6 @@
                                                                                         </complexType>
                                                                                     </element>
                                                                                 </sequence>
-                                                
-
                                                                             <attribute name="numPag" type="integer"></attribute>
                                                                         </complexType>
                                                                     </element>
