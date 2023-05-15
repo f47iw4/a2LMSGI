@@ -21,27 +21,30 @@
 
 <!-- REVISTAS -->
 <!ELEMENT revistas (revista*)>
-<!ELEMENT revista (tituloRev*, numRev, indiceRev, seccionRev)>
+<!ELEMENT revista (tituloRev*, numRev, indiceRev, seccionesRev)>
 <!ELEMENT tituloRev (#PCDATA)>
 <!ELEMENT numRev (#PCDATA)>
 <!ELEMENT indiceRev EMPTY>
-<!ELEMENT seccionRev EMPTY>
+<!ELEMENT seccionesRev (seccionRev)>
+<!ELEMENT seccionRev (contentRev)>
+<!ELEMENT contentRev EMPTY>
 
-<!ATTLIST 
-    revista indiceRev ID #REQUIRED
+<!ATTLIST revista 
+    indiceRev ID #REQUIRED
     tipo_clase (informatica|corazon|coches|investigacion| otras) #REQUIRED
     numPaginas CDATA #REQUIRED>
 <!ATTLIST seccionRev numPaginas CDATA #IMPLIED>
-<!ATTLIST contenidoRev href CDATA #REQUIRED>    
+<!ATTLIST 
+    contentRev href CDATA #REQUIRED>    
 
 
 <!-- PERIODICOS -->
 <!ELEMENT periodicos (periodico*)>
-<!ELEMENT periodico (indice, secciones)>
+<!ELEMENT periodico (indice, seccionesPer)>
 <!ELEMENT indice EMPTY>
 
-<!ELEMENT secciones (seccion*)>
-<!ELEMENT seccion (articulo, contenido)>
+<!ELEMENT seccionesPer (seccionPer*)>
+<!ELEMENT seccionPer (articulo, contenido)>
 <!ELEMENT articulo (#PCDATA)>
 <!ELEMENT contenido EMPTY>
 
@@ -50,7 +53,7 @@
     tipo_clase (nacional | internacional) #REQUIRED
     fechaPub CDATA #REQUIRED>
 <!ATTLIST 
-    seccion idSec (economica|opinion|deportes|nacional|internacional) #REQUIRED>
+    seccionPer idSec (economica|opinion|deportes|nacional|internacional) #REQUIRED>
 <!ATTLIST 
     articulo idAutor ID #REQUIRED>
 <!ATTLIST 

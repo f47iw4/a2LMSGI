@@ -2,52 +2,139 @@
 <!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
 
 <biblioteca>
+
+<!-- LIBROS -->
     <libros>
-        <libro idLib="L1111" tipo_clase="novela">
-            <tituloLib>
-            </tituloLib>
+        <libro idLib="L1111" tipo_clase="novela" numPaginas="564">
+            <tituloLib>La Sombra del Viento</tituloLib>
             <indiceLib />
             <capitulos>
+                <capitulo>
+                    <tituloCap>Días de Ceniza</tituloCap>
+                    <contenido href="https://www.wikiwand.com/es/La_sombra_del_viento"/>
+                </capitulo>
+                <capitulo>
+                    <tituloCap>Sombra Gris</tituloCap>
+                    <contenido href="https://www.wikiwand.com/es/La_sombra_del_viento"/>
+                </capitulo>
             </capitulos>
             <sinopsis>
+                    Un amanecer de 1945 un muchacho es conducido por su padre a un misterioso lugar oculto en el corazón de la ciudad vieja: El Cementerio de los Libros Olvidados. 
+                    Allí, Daniel Sempere encuentra un libro maldito que cambiará el rumbo de su vida y le arrastrará a un laberinto de intrigas y secretos enterrados en el alma oscura de la ciudad.
+                    La Sombra del Viento es un misterio literario ambientado en la Barcelona de la primera mitad del siglo XX
             </sinopsis>
         </libro>
 
-        <libro idLib="L2222" tipo_clase="infantil">
-            <tituloLib>
-            </tituloLib>
+        <libro idLib="L2222" tipo_clase="infantil" numPaginas="350">
+            <tituloLib>Simbad el Marino</tituloLib>
             <indiceLib />
             <capitulos>
+                <capitulo>
+                    <tituloCap>El Comerciante</tituloCap>
+                    <contenido href="https://www.wikiwand.com/es/Simbad_el_marino"/> 
+                </capitulo>
             </capitulos>
-            <sinopsis>
+            <sinopsis>Hace muchos años, en Bagdad, vivía un joven muy pobre llamado Simbad
             </sinopsis>
         </libro>
 
-        <libro idLib="L3333" tipo_clase="didactico">
-            <tituloLib>
-            </tituloLib>
+        <libro idLib="L3333" tipo_clase="didactico" numPaginas="369">
+            <tituloLib>Bases de datos</tituloLib>
             <indiceLib/>
             <capitulos>
+                <capitulo>
+                    <tituloCap>Construye un diagrama En-Rel</tituloCap>
+                    <contenido href="https://www.abcdaria.es/es/librobases-de-datos-2-edicion_G01UNY0019"/>
+                </capitulo>
             </capitulos>
-            <sinopsis>
+            <sinopsis>Este libro está concebido desde la experiencia de los autores, como administradores de bases de datos en empresas multinacionales, como profesores de formación profesional (familia informática) y como profesores de Universidad. Los profesionales de la industria informática y neófitos encontrarán una valiosa fuente de información para el desempeño de actividades relacionadas con bases de datos, detallando su funcionamiento, composición, diseño y aplicaciones
             </sinopsis>
         </libro>
     </libros>
 
+    <!-- REVISTAS -->
+
     <revistas>
         <revista indiceRev="R1111" tipo_clase="informatica" numPaginas="80">
-            <tituloRev></tituloRev>
+            <tituloRev>Computer Hoy</tituloRev>
             <numRev/>
             <indiceRev/>
-            <seccionRev/>
+            <seccionesRev>
+                <seccionRev>
+                    <contentRev href="https://www.probytes.net/wp-content/uploads/2018/01/4-1.png" />
+                </seccionRev>
+            </seccionesRev>
         </revista>
 
+         <revista indiceRev="R2222" tipo_clase="corazon" numPaginas="76">
+            <tituloRev>Pronto</tituloRev>
+            <numRev/>
+                <indiceRev/>
+                <seccionesRev>
+                    <seccionRev>
+                    <contentRev href="https://i.pinimg.com/originals/9c/7f/7e/9c7f7ed00657ee75a0f5297ddb116d63.jpg"/>
+                    </seccionRev>
+                </seccionesRev>
+        </revista>
+
+         <revista indiceRev="R3333" tipo_clase="coches" numPaginas="80">
+            <tituloRev>Motor</tituloRev>
+            <numRev/>
+            <indiceRev/>
+            <seccionesRev>
+                <seccionRev>
+                    <contentRev href="https://i.imgflip.com/122crn.jpg" />
+                </seccionRev>
+            </seccionesRev>
+        </revista>
+
+         <revista indiceRev="R4444" tipo_clase="investigacion" numPaginas="80">
+            <tituloRev>IntelNews</tituloRev>
+                <numRev/>
+                    <indiceRev/>
+                    <seccionesRev>
+                        <seccionRev>
+                            <contentRev href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+                        </seccionRev>
+                    </seccionesRev>
+        </revista>
+
+         <revista indiceRev="R5555" tipo_clase="otras" numPaginas="80">
+
+            <tituloRev>El Mundo Today</tituloRev>
+                <numRev/>
+                    <indiceRev/>
+                        <seccionesRev>
+                            <seccionRev>
+                                <contentRev href="https://www.elmundotoday.com/"/>
+                            </seccionRev>
+                        </seccionesRev>    
+        </revista>
     </revistas>
 
-    <revistas>
-    </revistas>
+<!-- PERIODICOS -->
+
 
     <periodicos>
+        <periodico idPer="P1111" tipo_clase="nacional" fechaPub="Mayo2023">
+            <indice />
+                <seccionesPer>
+                    <seccionPer idSec="economica">
+                        <articulo idAutor="Aut1">
+                        </articulo>
+                            <contenido href="https://elpais.com/economia/2023-05-15/bruselas-mejora-las-previsiones-de-crecimiento-de-espana-para-este-ano-con-un-alza-del-19-del-pib.html"/>
+                        </seccionPer>
+                </seccionesPer>
+        </periodico>
+        <periodico idPer="P2222" tipo_clase="internacional" fechaPub="Mayo 2023">
+            <indice />
+                <seccionesPer>
+                    <seccionPer idSec="deportes">
+                    <articulo idAutor="Aut2">
+                    </articulo>
+                    <contenido href="https://elpais.com/deportes/2023-02-26/fabian-beneito-el-espanol-que-aspira-a-llegar-a-la-elite-mundial-del-crossfit.html" />
+                    </seccionPer>
+                </seccionesPer>
+        </periodico>
     </periodicos>
-
 </biblioteca>
