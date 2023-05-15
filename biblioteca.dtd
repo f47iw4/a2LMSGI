@@ -1,0 +1,59 @@
+<!-- LIBROS -->
+<!ELEMENT biblioteca (libros, periodicos, revistas)>
+
+<!ELEMENT libros (libro*)>
+<!ELEMENT libro (tituloLib, indiceLib, capitulos, sinopsis)>
+<!ELEMENT tituloLib (#PCDATA)>
+<!ELEMENT indiceLib EMPTY>
+<!ELEMENT sinopsis (#PCDATA)>
+<!ELEMENT capitulos (capitulo*)>
+<!ELEMENT capitulo (tituloCap, contenido)>
+<!ELEMENT tituloCap (#PCDATA)>
+
+<!ATTLIST 
+    libro idLib ID #REQUIRED
+    tipo_clase (novela | infantil | didactico ) #REQUIRED
+    numPaginas CDATA #IMPLIED>
+
+<!ATTLIST capitulo
+    numPaginas CDATA #IMPLIED>
+
+<!ATTLIST contenido
+    href CDATA #IMPLIED>
+
+<!-- REVISTAS -->
+<!ELEMENT revistas (revista*)>
+<!ELEMENT revista (tituloRev*, numRev, indiceRev, seccionesRev)>
+<!ELEMENT tituloRev (#PCDATA)>
+<!ELEMENT numRev (#PCDATA)>
+<!ELEMENT indiceRev EMPTY>
+
+<!ATTLIST 
+    revista indiceRev ID #REQUIRED
+    tipo_clase (informatica|corazon|coches|investigacion| otras) #REQUIRED
+    numPaginas CDATA #REQUIRED>
+
+<!ATTLIST seccionRev numPaginas CDATA #IMPLIED>
+<!ATTLIST contenidoRev href CDATA #REQUIRED>    
+
+<!-- PERIODICOS -->
+<!ELEMENT periodicos (periodico*)>
+<!ELEMENT periodico (indice, secciones)>
+<!ELEMENT indice EMPTY>
+
+<!ELEMENT secciones (seccion*)>
+<!ELEMENT seccion (articulo, contenido)>
+<!ELEMENT articulo (#PCDATA)>
+<!ELEMENT contenido EMPTY>
+
+<!ATTLIST periodico
+    idPer ID #REQUIRED
+    tipo_clase (nacional | internacional) #REQUIRED
+    fechaPub CDATA #REQUIRED>
+
+<!ATTLIST 
+    seccion idSec (economica|opinion|deportes|nacional|internacional) #REQUIRED>
+<!ATTLIST 
+    articulo idAutor ID #REQUIRED>
+<!ATTLIST 
+    contenido href CDATA #REQUIRED>
