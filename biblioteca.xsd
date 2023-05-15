@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- declaracion del namespace-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+
+        <!-- biblioteca -->
+    <element name="biblioteca">
+        <complexType>
+            <sequence> 
+                <!-- contenidos de biblioteca-->
+                    <element name ="libros">
+                        <complexType>
+                        <!-- libro-->
+                            <sequence>
+                                <element name="libro" maxOccurs="unbounded"> 
+                                    <complexType>
+                                        <sequence>
+                                                <!-- elementos de libro -->
+                                                <element name="tituloLib" type="string"></element>
+                                                <element name="indiceLib" type="string"></element>
+                                                <element name="sipnosisLib" type="string"></element>
+                                                <!-- subelementos de libro-->
+                                                <element name="capitulos">
+                                                    <complexType>
+                                                            <sequence> 
+                                                                    <element name="capitulo" maxOccurs="unbounded">
+                                                                            <complexType>
+                                                                                <sequence>             
+                                                                                        <element name="contenido"> 
+                                                                                                        <complexType>
+                                                                                                            <attribute name="href" type="string"></attribute>
+                                                                                                        </complexType> 
+                                                                                         </element>
+                                                                                </sequence>
+                                                                                <attribute name="tituloCap" type="string"></attribute>
+                                                                                 <attribute name="numPag" type="integer"></attribute>
+                                                                            </complexType>  
+                            
+                                                                    </element>
+
+                                                            </sequence>
+
+                                                    </complexType>
+                                                </element>
+
+                                        </sequence>
+
+                                    <!-- atts de libro-->
+                                        <attribute name="idLib" type="ID" use="required"></attribute>
+                                        <attribute name="tipo_clase" type="string" use="required"></attribute>
+                                        <attribute name="numPag" type="integer" use="optional"></attribute>
+                                        
+                                    </complexType>
+                                
+                                </element>
+                                    
+                            </sequence>
+                        </complexType>
+                    
+                    </element>
+
+                    <element name ="periodicos">
+                    <complexType>
+                            <sequence>
+                                <!-- periodicos-->
+                                <element name="periodico" maxOccurs="unbounded">
+                                    <complexType>
+                                        <!-- elementos de periodico-->
+                                        <sequence>
+                                            
+                                            <element name="seccionPeriodico"> 
+                                                <complexType>
+                                                    <sequence>
+                                                        <element name="articulo" maxOccurs="unbounded">
+                                                            <complexType>
+                                                                <!-- Elemento dentro de articulo-->
+                                                                <sequence> 
+                                                                    <element name="contenido">
+                                                                        <complexType>
+                                                                            <attribute name="href" type="string"></attribute>
+                                                                        </complexType>
+
+                                                                    </element>
+                                                                </sequence>
+                                                                <attribute name="autorPer" type="string" use="required"></attribute>
+                                                            </complexType>
+                                                        
+                                                        </element>
+                                                        
+
+                                                </sequence>
+
+                                    
+                                                <attribute name="secType" type="string" use="required"></attribute>
+                                            </complexType>
+                                            </element>
+                                    
+                                            <element name="indicePer" type="string"></element>
+                                        
+                                        </sequence>
+
+                                        <attribute name="idPer" type="ID"></attribute>
+                                        <attribute name="tipo_clase" type="string"></attribute>
+                                        <attribute name="fechaP" type="date"></attribute>
+
+                                    </complexType>  
+                                
+                                 </element>
+                            
+                            </sequence>
+                    </complexType>
+                    
+                    </element>
+
+
+                        <element name ="revistas">
+                            <complexType>
+                                <sequence>
+                                    <element name="revista" maxOccurs="unbounded" >
+                                        <complexType>
+                                            <sequence>
+                                                <!-- Elementos de revistas-->
+                                                    <element name="tituloRev" type="string"></element>
+                                                    <element name="numRev" type="integer"></element>
+                                                    <element name="indiceRev" type="string"></element>
+                                                        <!-- Elemento seccion con subelementos-->
+                                                        <element name="seccionesRev">
+                                                            <complexType>
+                                                                <sequence>
+                                                                    <!-- definicion dentro de elemento seccion-->
+                                                                    <element name="seccion" maxOccurs="unbounded">
+                                                                        <complexType>
+                                                                                <sequence>
+                                                                                    <element name="contenido">
+                                                                                        <complexType>
+                                                                                            <attribute name="href" type="string" ></attribute>
+                                                                                        </complexType>
+                                                                                    </element>
+                                                                                </sequence>
+                                                
+
+                                                                            <attribute name="numPag" type="integer"></attribute>
+                                                                        </complexType>
+                                                                    </element>
+                                                                </sequence>
+                                                            </complexType>
+                                                        </element>
+                                            </sequence>
+                                                <attribute name="idRev" type="ID"></attribute>
+                                                <attribute name="tipo_clase" type="string"></attribute>
+                                                <attribute name="numPag" type="integer"></attribute>
+                                        </complexType>
+                                    </element>
+                                </sequence>
+                            </complexType>
+                       </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
