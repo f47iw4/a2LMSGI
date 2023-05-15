@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
+
+<biblioteca>
+    <libros>
+        <libro idLib="L1111" tipo_clase="novela">
+            <tituloLib>
+            </tituloLib>
+            <indiceLib />
+            <capitulos>
+            </capitulos>
+            <sinopsis>
+            </sinopsis>
+        </libro>
+
+        <libro idLib="L2222" tipo_clase="infantil">
+            <tituloLib>
+            </tituloLib>
+            <indiceLib />
+            <capitulos>
+            </capitulos>
+            <sinopsis>
+            </sinopsis>
+        </libro>
+
+        <libro idLib="L3333" tipo_clase="didactico">
+            <tituloLib>
+            </tituloLib>
+            <indiceLib/>
+            <capitulos>
+            </capitulos>
+            <sinopsis>
+            </sinopsis>
+        </libro>
+    </libros>
+
+    <revistas>
+        <revista indiceRev="R1111" tipo_clase="informatica" numPaginas="80">
+            <tituloRev></tituloRev>
+            <numRev/>
+            <indiceRev/>
+            <seccionRev/>
+        </revista>
+
+    </revistas>
+
+    <revistas>
+    </revistas>
+
+    <periodicos>
+    </periodicos>
+
+</biblioteca>

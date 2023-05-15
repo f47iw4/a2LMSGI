@@ -1,5 +1,5 @@
 <!-- LIBROS -->
-<!ELEMENT biblioteca (libros, periodicos, revistas)>
+<!ELEMENT biblioteca (libros, revistas, periodicos)>
 
 <!ELEMENT libros (libro*)>
 <!ELEMENT libro (tituloLib, indiceLib, capitulos, sinopsis)>
@@ -14,27 +14,26 @@
     libro idLib ID #REQUIRED
     tipo_clase (novela | infantil | didactico ) #REQUIRED
     numPaginas CDATA #IMPLIED>
-
 <!ATTLIST capitulo
     numPaginas CDATA #IMPLIED>
-
 <!ATTLIST contenido
     href CDATA #IMPLIED>
 
 <!-- REVISTAS -->
 <!ELEMENT revistas (revista*)>
-<!ELEMENT revista (tituloRev*, numRev, indiceRev, seccionesRev)>
+<!ELEMENT revista (tituloRev*, numRev, indiceRev, seccionRev)>
 <!ELEMENT tituloRev (#PCDATA)>
 <!ELEMENT numRev (#PCDATA)>
 <!ELEMENT indiceRev EMPTY>
+<!ELEMENT seccionRev EMPTY>
 
 <!ATTLIST 
     revista indiceRev ID #REQUIRED
     tipo_clase (informatica|corazon|coches|investigacion| otras) #REQUIRED
     numPaginas CDATA #REQUIRED>
-
 <!ATTLIST seccionRev numPaginas CDATA #IMPLIED>
 <!ATTLIST contenidoRev href CDATA #REQUIRED>    
+
 
 <!-- PERIODICOS -->
 <!ELEMENT periodicos (periodico*)>
@@ -50,7 +49,6 @@
     idPer ID #REQUIRED
     tipo_clase (nacional | internacional) #REQUIRED
     fechaPub CDATA #REQUIRED>
-
 <!ATTLIST 
     seccion idSec (economica|opinion|deportes|nacional|internacional) #REQUIRED>
 <!ATTLIST 
