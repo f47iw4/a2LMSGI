@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xml>
-<!-- Tres tipos de documentos: libros, revistas y periódicos. Todos los documentos tienen como 
-     identificador un atributo id. Para los libros, el id empieza por L seguido de cuatro dígitos.
-     Para los periódicos, el id empieza por P seguido de cuatro dígitos. Las revistas igual con R. -->
 
-<!--  Libros: L1234. clasificado como novela, infantil o didáctico.
-      Cada libro tiene un atributo que identifica su clase llamado tipo_clase    -->
 
 <biblioteca>
 
     <libros>
-        <libro id="L1000" numPaginas="564" tipo_clase="Novela"> <!-- novela -->
-            <título>La Sombra del Viento</título>
+        <libro id="L1000" numPaginas="564" tipo_clase="Novela"> 
+            <titulo>La Sombra del Viento</titulo>
             <indice_lib>
                 <capitulos>
                     <capitulo numPaginas="46">
@@ -25,8 +20,8 @@
                     La Sombra del Viento es un misterio literario ambientado en la Barcelona de la primera mitad del siglo XX</sinopsis>
         </libro>
 
-         <libro id="L2000" numPaginas="350" tipo_clase="Infantil"> <!-- infantil -->
-            <título>Simbad el Marino</título>
+         <libro id="L2000" numPaginas="350" tipo_clase="Infantil"> 
+            <titulo>Simbad el Marino</titulo>
             <indice_lib>
                 <capitulos>
                     <capitulo numPaginas="25">
@@ -38,8 +33,8 @@
             <sinopsis>Hace muchos años, en Bagdad, vivía un joven muy pobre llamado Simbad</sinopsis>
         </libro>
 
-        <libro id="L3000" numPaginas="369" tipo_clase="Didáctico"> <!-- didáctico -->
-            <título>Introducción a las Bases de Datos</título>
+        <libro id="L3000" numPaginas="369" tipo_clase="Didáctico"> 
+            <titulo>Introducción a las Bases de Datos</titulo>
             <indice_lib>
                 <capitulos>
                     <capitulo numPaginas="23">
@@ -54,8 +49,8 @@
 
     <revistas>
 
-        <revista id="R4000" tipo_clase="Informática"> <!-- informática -->
-            <título>Computer Hoy</título>
+        <revista id="R4000" tipo_clase="Informática"> 
+            <titulo>Computer Hoy</titulo>
                 <revista_num>
                     <indice_rev>
                         <seccion numPaginas="75">
@@ -66,8 +61,8 @@
                 </revista_num>
         </revista>
 
-        <revista id="R5000" tipo_clase="Corazón"> <!-- corazón -->
-            <título>Pronto</título>
+        <revista id="R5000" tipo_clase="Corazón"> 
+            <titulo>Pronto</titulo>
                 <revista_num>
                     <indice_rev>
                         <seccion numPaginas="80">
@@ -77,8 +72,8 @@
                 </revista_num>
         </revista>
 
-        <revista id="R6000" tipo_clase="Coches"> <!-- coches -->
-            <título>Mundo Motor</título>
+        <revista id="R6000" tipo_clase="Coches"> 
+            <titulo>Mundo Motor</titulo>
                 <revista_num>
                     <indice_rev>
                         <seccion numPaginas="70">
@@ -88,8 +83,8 @@
                 </revista_num>
         </revista>
 
-        <revista id="R7000" tipo_clase="Investigación"> <!-- investigación -->
-            <título>Magister News</título>
+        <revista id="R7000" tipo_clase="Investigación"> 
+            <titulo>Magister News</titulo>
                 <revista_num>
                     <indice_rev>
                         <seccion numPaginas="60">
@@ -99,8 +94,8 @@
                 </revista_num>
         </revista>
 
-        <revista id="R8000" tipo_clase="Otros"> <!-- otros -->   
-            <título>El Mundo Today</título>
+        <revista id="R8000" tipo_clase="Otros">   
+            <titulo>El Mundo Today</titulo>
                     <revista_num>
                     <indice_rev>
                         <seccion numPaginas="40">
