@@ -1,39 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE xml>
+<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
 
 
 <biblioteca>
-
     <libros>
         <libro id="L1000" numPaginas="564" tipo_clase="Novela"> 
-            <titulo>La Sombra del Viento</titulo>
-            <indice_lib>
+            <l_titulo>La Sombra del Viento</l_titulo>
+            <l_indice>
                 <capitulos>
                     <capitulo numPaginas="46">
                         <titulo_capitulo>Días de ceniza</titulo_capitulo>
-                        <contenido href="https://www.wikiwand.com/es/La_sombra_del_viento"/>
+                        <l_contenido href="https://www.wikiwand.com/es/La_sombra_del_viento"/>
                     </capitulo>
                 </capitulos>
-            </indice_lib>
+            </l_indice>
             <sinopsis>Un amanecer de 1945 un muchacho es conducido por su padre a un misterioso lugar oculto en el corazón de la ciudad vieja: El Cementerio de los Libros Olvidados. 
                     Allí, Daniel Sempere encuentra un libro maldito que cambiará el rumbo de su vida y le arrastrará a un laberinto de intrigas y secretos enterrados en el alma oscura de la ciudad.
                     La Sombra del Viento es un misterio literario ambientado en la Barcelona de la primera mitad del siglo XX</sinopsis>
         </libro>
 
          <libro id="L2000" numPaginas="350" tipo_clase="Infantil"> 
-            <titulo>Simbad el Marino</titulo>
-            <indice_lib>
+            <l_titulo>Simbad el Marino</l_titulo>
+            <l_indice>
                 <capitulos>
                     <capitulo numPaginas="25">
                         <titulo_capitulo>El Comerciante</titulo_capitulo>
-                        <contenido href="https://www.wikiwand.com/es/Simbad_el_marino"/>
+                        <l_contenido href="https://www.wikiwand.com/es/Simbad_el_marino"/>
                     </capitulo>
                 </capitulos>
-            </indice_lib>
+            </l_indice>
             <sinopsis>Hace muchos años, en Bagdad, vivía un joven muy pobre llamado Simbad</sinopsis>
         </libro>
 
-        <libro id="L3000" numPaginas="369" tipo_clase="Didáctico"> 
+        <libro id="L3000" numPaginas="369" tipo_clase="Didactico"> 
             <titulo>Introducción a las Bases de Datos</titulo>
             <indice_lib>
                 <capitulos>
@@ -49,7 +48,7 @@
 
     <revistas>
 
-        <revista id="R4000" tipo_clase="Informática"> 
+        <revista id="R4000" tipo_clase="Informatica"> 
             <titulo>Computer Hoy</titulo>
                 <revista_num>
                     <indice_rev>
@@ -61,7 +60,7 @@
                 </revista_num>
         </revista>
 
-        <revista id="R5000" tipo_clase="Corazón"> 
+        <revista id="R5000" tipo_clase="Corazon"> 
             <titulo>Pronto</titulo>
                 <revista_num>
                     <indice_rev>
@@ -83,7 +82,7 @@
                 </revista_num>
         </revista>
 
-        <revista id="R7000" tipo_clase="Investigación"> 
+        <revista id="R7000" tipo_clase="Investigacion"> 
             <titulo>Magister News</titulo>
                 <revista_num>
                     <indice_rev>
@@ -111,21 +110,33 @@
         <periodicoNacional id="P9000" tipo_clase="Prensa Nacional" fechaPub="">     
             <indice></indice>
             <secciones>
-                <seccion id="Eco122" tipo_seccion="Economía" autor="Pedro"></seccion>
-                <seccion id="Opi243" tipo_seccion="Opinión" autor="Pablo"></seccion>
-                <seccion id="Depi693" tipo_seccion="Deportes" autor="Mateo"></seccion>
+                <seccion idSec="Eco122" tipo_seccion="Economia"></seccion>
+                    <articulo id_autor="A1111">Bruselas mejora las previsiones de crecimiento de España para este año con un alza del 1,9% del PIB</articulo>
+                    <contenido 
+                    href="https://elpais.com/economia/2023-05-15/bruselas-mejora-las-previsiones-de-crecimiento-de-espana-para-este-ano-con-un-alza-del-19-del-pib.html"/>
+               
+                <seccion idSec="Opi243" tipo_seccion="Opinion"></seccion>
+                    <articulo id_autor="A2222">El español que aspira a llegar a la elite mundial del Crossfit </articulo>
+                    <contenido 
+                    href="https://elpais.com/deportes/2023-02-26/fabian-beneito-el-espanol-que-aspira-a-llegar-a-la-elite-mundial-del-crossfit.html"/>
+               
+                <seccion idSec="Depi693" tipo_seccion="Deportes" ></seccion>
+                     <articulo id_autor="A3333">Ana, la 'furia' del Breakdance, mira a París 2024</articulo>
+                     <contenido 
+                    href="https://www.rtve.es/play/videos/telediario/breakdance-ana-furia-paris-2024/6889774/"/>
+
+                
             </secciones>      
-            <contenido href=""/>
+       
         </periodicoNacional>
 
         <periodicoInternacional id="P1100" tipo_clase="Prensa Internacional" fechaPub="">
             <indice></indice>
             <secciones>
-                <seccion id="E12" tipo_seccion="Economics" autor="Peter"></seccion>
-                <seccion id="O24" tipo_seccion="Opinion" autor="Paul"></seccion>
-                <seccion id="S60" tipo_seccion="Sports" autor="Matthew"></seccion>
+                <seccion idSec="E12" tipo_seccion="Economics"></seccion>
+                <seccion idSec="O24" tipo_seccion="Opinion"></seccion>
+                <seccion idSec="S60" tipo_seccion="Sports"></seccion>
             </secciones> 
-            <contenido href=""/>
         </periodicoInternacional>
 
     </periodicos>
